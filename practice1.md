@@ -243,7 +243,7 @@ merge (x,y)
 27 6 15
 28 6 15
 
-#Function 20 --> Points(). This function adds points to the graph.
+#Function 20 -> Points(). This function adds points to the graph.
 x <- c(1,2,3) #We'll add these elements as points
 x1 <- c(1,1,1,2,3,4) #These elements will be our histogram.
 hist(x1)
