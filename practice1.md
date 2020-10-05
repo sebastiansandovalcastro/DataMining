@@ -150,3 +150,101 @@
     mean(x)
 
 #The mean, in this case, must be 4.4.
+
+#Function 11 --> cat(). This function prints arguments after execute variables of type string, double, among others.
+x <- 7
+cat (x)
+7 
+y <- "Pamela"
+cat(y,"tiene",x,"perros")
+Pamela tiene 7 perros #Result
+> cat(y,"tiene\n",x,"perros") #\n divides the expression into two lines
+Pamela tiene
+ 7 perros #Result
+
+#Function 12 --> max(). This function show us the maximum of the elements of x.
+x <- c(23,1,-2,56,8,1.55) #Create a example vector
+max(x) #Apply function max for look the maximum number of the vector
+[1] 56 #Result
+
+#Function 13 --> min(). This function show us the minimum of the elements of x.
+x <- c(23,1,-2,56,8,1.55) #Create a example vector
+min(x) #Apply function max for look the maximum number of the vector
+[1] -2 #Result
+
+#Function 14 --> range(). This function show us the minimun and maximum of the elements of the vector created.
+x <- c(23,1,-2,56,8,1.55) #Create a example vector
+range(x)#Apply function range
+[1] -2 56 #Result
+
+#Function 15 --> rnorm(1). The rnorm(1) function generates a random sampled data from a normal distribution with mean 0 and variance 1.
+n <- 2 + rnorm(1)
+n
+[1] 2.577821
+
+#Function 16 --> ls(). The function simply lists the objects in memory: only the names of the same.
+name <- "Stephany"; n1 <- 8; n2 <- 14; x <- 0.5; y = "Pamela"
+ls() #Apply function ls
+[1] "n"    "n1"   "n2"   "name" "x" "y" #Result
+ls.str() #This function shows some details of the objects in memory.
+n :  num 2.58
+n1 :  num 8
+n2 :  num 14
+name :  chr "Stephany"
+x :  num 0.5
+y :  chr "Pamela"
+#If you want to list only those objects that contain a particular character, 
+#you can use the pattern option (which can be abbreviated as pat):
+> ls(pat = "a") 
+[1] "name"
+> ls(pat ="s")
+character(0)
+
+#Function 17 --> paste(). This function concatenate vectors after converting to character.
+paste("Pamela",16212034)
+[1] "Pamela 16212034"
+
+#Function 18 --> barplot(). This function shows a histogram of the values of x.
+x1 <- c(1,2,3,4,5,6,6) #Create a example vector.
+barplot(x1)
+
+#Function 19 --> merge(). This function merges two data frames by common columns or row names.
+x <- c(1,2,3,4,5,6)
+y <- c(1,8,12,15)
+merge (x,y)
+#Result 
+  x  y
+1  1  1
+2  2  1
+3  3  1
+4  4  1
+5  5  1
+6  6  1
+7  6  1
+8  1  8
+9  2  8
+10 3  8
+11 4  8
+12 5  8
+13 6  8
+14 6  8
+15 1 12
+16 2 12
+17 3 12
+18 4 12
+19 5 12
+20 6 12
+21 6 12
+22 1 15
+23 2 15
+24 3 15
+25 4 15
+26 5 15
+27 6 15
+28 6 15
+
+#Function 20 --> Points(). This function adds points to the graph.
+x <- c(1,2,3) #We'll add these elements as points
+x1 <- c(1,1,1,2,3,4) #These elements will be our histogram.
+hist(x1)
+points(x)
