@@ -1,7 +1,10 @@
-#TWENTY "R" FUNCTIONS
+# TWENTY "R" FUNCTIONS
 
-###Function 1
+
+### Function 1
+
 **substr(string, start = X, stop = Y)**
+
 
 If We have a string value, We can take the character amount that We want from it with the substr() function.
 If We have the next value:
@@ -14,8 +17,11 @@ And We want to see just the "Hello" word and toss out the rest of characters, We
 
 And the result must be the first five characters from the string, in this case, the word "Hello".
 
-###Function 2
+
+### Function 2
+
 **sum(a, b, ..., n) -> sum(vector) -> sum(a, b, vector, ..., n)**
+
 
 We can sum a bunch of stored numbers in variables or vectors with the sum() function.
 Here are some examples:
@@ -38,8 +44,11 @@ Here are some examples:
 	Result = 24.5
 		sum(a, b, c, vector)
 
-###Function 3
+
+### Function 3
+
 **plot(x, y)**
+
 
 We can plot in R with plot() function, using numbers, variables, vectors, etc.
 Here is an example:
@@ -50,8 +59,11 @@ Here is an example:
 		
 		plot(x, y)
 
-###Function 4
+
+### Function 4
+
 **solve(x,y)**
+
 
 This generic function solves the equation a %*% x = b for x, where b can be either a vector or a matrix.
 A simple way to look at it, is that We obtain the division between "y" and "x".
@@ -66,8 +78,11 @@ And We use the solve() function:
 
 We must obtain the number 7 as result.
 
-###Function 5
+
+### Function 5
+
 **tolower(string) -> toupper(string)** 
+
 
 This two functions helps to make the characters of a string value in lower or upper characters.
 If We have the next string variable:
@@ -82,8 +97,11 @@ Or We can make it all upper with the toupper() function, getting as result the s
 
 	toupper(variable)
 
-###Function 6
+
+### Function 6
+
 **pie(x)**
+
 
 Pie() function is used to plot a bunch of data in a pie graphic. For example, if We have a vector with six numbers on it, We can see this information in a pie chart using the pie() function with the vector as a parameter.
 
@@ -91,8 +109,11 @@ Pie() function is used to plot a bunch of data in a pie graphic. For example, if
 	
 	pie(vector)
 
-###Function 7
+
+### Function 7
+
 **round(x, n)**
+
 
 The round() function, rounds the elements of "x" to "n" decimals, for example:
 
@@ -103,8 +124,11 @@ The round() function, rounds the elements of "x" to "n" decimals, for example:
 
 In this case, the result must be 24.33.
 
-###Function 8
+
+### Function 8
+
 **unique(vector)** 
+
 
 The unique() function is used with vectors or data frames. This function returns a similar object as the used parameter, but the duplicate elements are suppressed. For example:
 
@@ -114,8 +138,11 @@ The unique() function is used with vectors or data frames. This function returns
 
 The result must be a vector, just like the variable given as parameter, but only with the "1,2,3,4,5" values once.
 
-###Function 9
+
+### Function 9
+
 **hist(x)**
+
 
 The hist() function is used to plot a frequency histogram of the given parameter, for example:
 
@@ -123,8 +150,11 @@ The hist() function is used to plot a frequency histogram of the given parameter
 	
 	hist(x)
 
-###Function 10
+
+### Function 10
+
 **mean(x)**
+
 
 The mean() function, obtains the mean of the elements in the given parameter, for example:
 
@@ -134,8 +164,11 @@ The mean() function, obtains the mean of the elements in the given parameter, fo
 
 The mean, in this case, must be 4.4.
 
-###Function 11
+
+### Function 11
+
 **cat()**
+
 
 This function prints arguments after execute variables of type string, double, among others.
 
@@ -149,8 +182,11 @@ This function prints arguments after execute variables of type string, double, a
 	Pamela tiene
 	 7 perros #Result
 
-###Function 12
+
+### Function 12
+
 **max()**
+
 
 This function show us the maximum of the elements of x.
 
@@ -158,8 +194,11 @@ This function show us the maximum of the elements of x.
 	max(x) #Apply function max for look the maximum number of the vector
 	[1] 56 #Result
 
-###Function 13
+
+### Function 13
+
 **min()**
+
 
 This function show us the minimum of the elements of x.
 
@@ -167,8 +206,11 @@ This function show us the minimum of the elements of x.
 	min(x) #Apply function max for look the maximum number of the vector
 	[1] -2 #Result
 
-###Function 14
+
+### Function 14
+
 **range()**
+
 
 This function show us the minimun and maximum of the elements of the vector created.
 
@@ -176,8 +218,11 @@ This function show us the minimun and maximum of the elements of the vector crea
 	range(x)#Apply function range
 	[1] -2 56 #Result
 
-###Function 15
+
+### Function 15
+
 **rnorm(1)**
+
 
 The rnorm(1) function generates a random sampled data from a normal distribution with mean 0 and variance 1.
 
@@ -185,8 +230,11 @@ The rnorm(1) function generates a random sampled data from a normal distribution
 	n
 	[1] 2.577821
 
-###Function 16
+
+### Function 16
+
 **ls()**
+
 
 The function simply lists the objects in memory: only the names of the same.
 
@@ -208,24 +256,33 @@ If you want to list only those objects that contain a particular character, you 
 	> ls(pat ="s")
 	character(0)
 
-###Function 17
+
+### Function 17
+
 **paste()**
+
 
 This function concatenate vectors after converting to character.
 
 	paste("Pamela",16212034)
 	[1] "Pamela 16212034"
 
-###Function 18
+
+### Function 18
+
 **barplot()**
+
 
 This function shows a histogram of the values of x.
 
 	x1 <- c(1,2,3,4,5,6,6) #Create a example vector.
 	barplot(x1)
 
-###Function 19
+
+### Function 19
+
 **merge()**
+
 
 This function merges two data frames by common columns or row names.
 
@@ -263,8 +320,11 @@ This function merges two data frames by common columns or row names.
 	27 6 15
 	28 6 15
 
-###Function 20
+
+### Function 20
+
 **Points()**
+
 
 This function adds points to the graph.
 
