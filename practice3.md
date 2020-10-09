@@ -119,3 +119,137 @@ We assign the result in the "meanProfitAfterTax" variable.
 
 	meanProfitAfterTax = mean(profitAfterTax)
 	print(meanProfitAfterTax)
+
+
+### 6. GOOD MONTHS
+
+
+The good months are the months where their profits after taxes are above the mean of the profit after tax.
+
+
+We assign the result in the new boolean variable "goodMonths".
+
+
+	goodMonths = (profitAfterTax > meanProfitAfterTax)
+	print(goodMonths)
+
+
+### 7. BAD MONTHS
+
+
+The bad months are the months where their profits after taxes are below the mean of the profit after tax. They are the opposite to the good months too though,
+
+
+We can obtain the result doing the same thing that We did before, with a few changes of course:
+
+
+	badMonths = (profitAfterTax < meanProfitAfterTax)
+	print(badMonths)
+
+
+Or We can use the "!" operator to get the opposite of the good months as result.
+
+
+	badMonths = !goodMonths
+	print(badMonths)
+
+
+### 8. MAX PROFIT AFTER TAX
+
+
+We can obtain the max profit after tax using the max() function with the "profitAfterTax" variable as a parameter.
+
+
+We assign the result in the "maxProfitAfterTax" variable to use it later.
+
+
+	maxProfitAfterTax = max(profitAfterTax)
+	print(maxProfitAfterTax)
+
+
+### 9. MIN PROFIT AFTER TAX
+
+
+We can obtain the min profit after tax using the min() function with the "profitAfterTax" variable as a parameter.
+
+
+We assign the result in the "minProfitAfterTax" variable to use it later.
+
+
+	minProfitAfterTax = min(profitAfterTax)
+	print(minProfitAfterTax)
+
+
+### 10. BEST MONTH
+
+
+In order to obtain the best month, We need to compare all the profits after taxes with the max profit after tax value.
+
+
+The month that matches with the max value will be the best month and We assign that result in the "bestMonth" variable.
+
+
+	bestMonth = (profitAfterTax == maxProfitAfterTax)
+	print(bestMonth)
+
+
+### 11. WORST MONTH
+
+
+In order to obtain the worst month, We need to compare all the profits after taxes with the min profit after tax value.
+
+
+The month that matches with the min value will be the worst month and We assign the result in the "worstMonth" variable.
+
+
+	worstMonth = (profitAfterTax == minProfitAfterTax)
+	print(worstMonth)
+
+
+### 12. ALL CALCULATIONS IN UNITS OF ONE THOUSAND DOLLARS
+
+
+To convert all the calculations made in units of 1000 dollars, We need to divide the variable over 1000, rounding to 0 with the round() function in order to suppress the decimals.
+
+
+We assign the result in new variables and We visualize them all with the print() function.
+
+
+	revenue1000 = round(revenue / 1000, 0)
+	expenses1000 = round(expenses / 1000, 0)
+	profit1000 = round(profit / 1000, 0)
+	profitAfterTax1000 = round(profitAfterTax / 1000, 0)
+	
+	print(revenue1000)
+	print(expenses1000)
+	print(profit1000)
+	print(profitAfterTax1000)
+	print(profitMargin)
+	print(goodMonths)
+	print(badMonths)
+	print(bestMonth)
+	print(worstMonth)
+
+
+### 13. MATRIX TABLE VISUALIZATION
+
+
+To visualize the information as a matrix table, We need to use the rbind() function with the obtained values as parameters.
+
+
+We assign the result in the "Matrix" variable and We print it to see the table.
+
+
+	Matrix = rbind(
+	  revenue1000,
+	  expenses1000,
+	  profit1000,
+	  profitAfterTax1000,
+	  profitMargin,
+	  goodMonths,
+	  badMonths,
+	  bestMonth,
+	  worstMonth
+	)
+	
+	print(Matrix)
