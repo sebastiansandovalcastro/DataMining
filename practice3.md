@@ -1,9 +1,5 @@
 # PRACTICE 3 - DATA SCIENTIST PROBLEM
 
-
-[TOCM]
-
-
 **Scenario:** You are a Data Scientist working for a consulting firm. One of your colleagues from the Auditing Department has asked you to help them assess the financial statement of organization X.
 
 

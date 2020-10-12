@@ -1,7 +1,5 @@
 # PRACTICE 2 - TWENTY "R" FUNCTIONS
 
-[TOCM]
-
 ### Function 1
 
 **substr(string, start = X, stop = Y)**
