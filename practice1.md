@@ -19,7 +19,7 @@
 	c = 1 //Counter initialized in 1.
 
 
-###### 3. loop for(i in rnorm(size))
+###### 3. Loop for(i in rnorm(size))
 
 ###### 4. Check if the iterated variable falls
 
@@ -42,3 +42,5 @@
 	result
 	
 	plot(result)
+
+![ScreenShot](https://raw.github.com/sebastiansandovalcastro/DataMining/tree/images/unit1/practice1plot.png) 
