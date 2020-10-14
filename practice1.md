@@ -43,4 +43,4 @@
 	
 	plot(result)
 
-![ScreenShot](https://raw.github.com/sebastiansandovalcastro/DataMining/tree/images/unit1/practice1plot.png) 
+![ScreenShot](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/practice1plot.png) 
