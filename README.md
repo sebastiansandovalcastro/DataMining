@@ -1,8 +1,6 @@
-# DATA MINING
+# UNIT 1
 
 ## INDEX
-
-### [UNIT 1](https://github.com/sebastiansandovalcastro/DataMining/tree/unit1)
 
 #### [PRACTICES](https://github.com/sebastiansandovalcastro/DataMining/tree/unit1/practices)
 
@@ -15,33 +13,3 @@
 #### [INVESTIGATIONS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/investigations)
 
 #### [EVALUATION](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/evaluation)
-
-### [UNIT 2](https://github.com/sebastiansandovalcastro/DataMining/tree/unit2)
-
-#### [PRACTICES](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/practices)
-
-#### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/homeworks)
-
-#### [INVESTIGATIONS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/investigations)
-
-#### [EVALUATION](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/evaluation)
-
-### [UNIT 3](https://github.com/sebastiansandovalcastro/DataMining/tree/unit3)
-
-#### [PRACTICES](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/practices)
-
-#### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/homeworks)
-
-#### [INVESTIGATIONS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/investigations)
-
-#### [EVALUATION](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/evaluation)
-
-### [UNIT 4](https://github.com/sebastiansandovalcastro/DataMining/tree/unit4)
-
-#### [PRACTICES](https://github.com/sebastiansandovalcastro/DataMining/blob/unit4/practices)
-
-#### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit4/homeworks)
-
-#### [INVESTIGATIONS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit4/investigations)
-
-#### [EVALUATION](https://github.com/sebastiansandovalcastro/DataMining/blob/unit4/evaluation)
