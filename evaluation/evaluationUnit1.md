@@ -127,18 +127,314 @@ For the merge of the 2013 data, we used the data frames created from the CSV and
 
 ### REGIONS WITH COUNTRIES
 
-...
+In this section We realized that, if We wanted to show the countries and divide them by region, we needed to separate them in different data frames in order to avoid the saturation of information at the  time of plotting the data, so We decided to do six new data frames for the countries with 1960 data divided by region. We filtered using the "merge1960" data frame and We used the six different regions on the data.
+
+	#REGIONS WITH COUNTRIES BY YEAR----------------------------------------
+
+	#Countries 1960 by Region
+	Africa1960 <- filter(merge1960, Region== "Africa")
+	Asia1960 <- filter(merge1960, Region== "Asia")
+	Europe1960 <- filter(merge1960, Region== "Europe")
+	MiddleEast1960 <- filter(merge1960, Region== "Middle East")
+	Oceania1960 <- filter(merge1960, Region== "Oceania")
+	TheAmericas1960 <- filter(merge1960, Region== "The Americas")
+
+We did the same thing here, but We used the "merge2013" data frame as source.
+
+	#Countries 2013 by Region
+	Africa2013 <- filter(merge2013, Region== "Africa")
+	Asia2013 <- filter(merge2013, Region== "Asia")
+	Europe2013 <- filter(merge2013, Region== "Europe")
+	MiddleEast2013 <- filter(merge2013, Region== "Middle East")
+	Oceania2013 <- filter(merge2013, Region== "Oceania")
+	TheAmericas2013 <- filter(merge2013, Region== "The Americas")
+
+We ended up with twelve new data frames, with more specific data in them and an easy plotting as result.
 
 ### GRAPHS
 
-..
+We decided that We had the necessary to start to plot the data frames and We started saving each plot to interpret the results at the end. We used the same x and y axes for every graph.
+
+#### YEAR GRAPHS BY REGION
+
+The first graphs that We made were:
+
+- The "g1960" with a comparative between the Life Expectancy in 1960 and the fertility rate.
+
+- The "g2013" with a comparative between the Life Expectancy in 2013 and the fertility rate.
+
+Everything was clasified by the Region of the data.
+
+	#GRAPHS------------------------------------
+
+	#Year graphs by region.
+	g1960 = qplot(data=merge1960, x=Fertility.Rate, y=Life.Expectancy.1960, color=Region, size=I(1), main="Life Expectancy 1960 VS. Fertility Rate (By Region)")
+
+	g2013 = qplot(data=merge2013, x=Fertility.Rate, y=Life.Expectancy.2013, color=Region, size=I(1), main="Life Expectancy 2013 VS. Fertility Rate (By Region)")
+
+Then, We merge two plots to see all the data together, clasified by region. We named this graph as "g1960.2013.Region".
+
+	g1960.2013.Region = ggplot() +
+	  geom_point(data=merge1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Region)) +
+	  geom_point(data=merge2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Region))
+
+And then, We merge two plots to see all the data together, clasified by year. We named this graph as "g1960.2013.Year".
+
+	g1960.2013.Year = ggplot() +
+	  geom_point(data=merge1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Year)) +
+	  geom_point(data=merge2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Year))
+
+#### REGION GRAPHS BY COUNTRY
+
+The region graphs was divided by countries and We did the same thing for every region.
+
+First of all, We did a 1960 data frame for the region, clasified by countries, then We did the same thing with the 2013 data frame.
+
+Next, We created a merge of graphs in order to see both years with all the countries.
+
+Finally, We made a merge of graphs to see all the data of the specific region, clasified by year.
+
+##### AFRICA GRAPHS
+
+	#Africa Graphs.
+	gAfrica1960 = qplot(data=Africa1960, x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name, size=I(1), main="Life Expectancy 1960 VS. Fertility Rate (In Africa)")
+	gAfrica2013 = qplot(data=Africa2013, x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name, size=I(1), main="Life Expectancy 2013 VS. Fertility Rate (In Africa)")
+
+	gAfrica1960.2013.Country = ggplot() +
+	  geom_point(data=Africa1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name)) +
+	  geom_point(data=Africa2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name))
+
+	gAfrica1960.2013.Year = ggplot() +
+	  geom_point(data=Africa1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Year)) +
+	  geom_point(data=Africa2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Year))
+
+##### ASIA GRAPHS
+
+	#Asia Graphs.
+	gAsia1960 = qplot(data=Asia1960, x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name, size=I(1), main="Life Expectancy 1960 VS. Fertility Rate (In Asia)")
+	gAsia2013 = qplot(data=Asia2013, x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name, size=I(1), main="Life Expectancy 2013 VS. Fertility Rate (In Asia)")
+
+	gAsia1960.2013.Country = ggplot() +
+	  geom_point(data=Asia1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name)) +
+	  geom_point(data=Asia2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name))
+
+	gAsia1960.2013.Year = ggplot() +
+	  geom_point(data=Asia1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Year)) +
+	  geom_point(data=Asia2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Year))
+
+##### EUROPE GRAPHS
+
+	#Europe Graphs.
+	gEurope1960 = qplot(data=Europe1960, x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name, size=I(1), main="Life Expectancy 1960 VS. Fertility Rate (In Europe)")
+	gEurope2013 = qplot(data=Europe2013, x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name, size=I(1), main="Life Expectancy 2013 VS. Fertility Rate (In Europe)")
+
+	gEurope1960.2013.Country = ggplot() +
+	  geom_point(data=Europe1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name)) +
+	  geom_point(data=Europe2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name))
+
+	gEurope1960.2013.Year = ggplot() +
+	  geom_point(data=Europe1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Year)) +
+	  geom_point(data=Europe2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Year))
+
+##### MIDDLE EAST GRAPHS
+
+	#Middle East Graphs.
+	gMiddleEast1960 = qplot(data=MiddleEast1960, x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name, size=I(1), main="Life Expectancy 1960 VS. Fertility Rate (In Middle East)")
+	gMiddleEast2013 = qplot(data=MiddleEast2013, x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name, size=I(1), main="Life Expectancy 2013 VS. Fertility Rate (In Middle East)")
+
+	gMiddleEast1960.2013.Country = ggplot() +
+	  geom_point(data=MiddleEast1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name)) +
+	  geom_point(data=MiddleEast2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name))
+
+	gMiddleEast1960.2013.Year = ggplot() +
+	  geom_point(data=MiddleEast1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Year)) +
+	  geom_point(data=MiddleEast2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Year))
+
+##### OCEANIA GRAPHS
+
+	#Oceania Graphs.
+	gOceania1960 = qplot(data=Oceania1960, x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name, size=I(1), main="Life Expectancy 1960 VS. Fertility Rate (In Oceania)")
+	gOceania2013 = qplot(data=Oceania2013, x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name, size=I(1), main="Life Expectancy 2013 VS. Fertility Rate (In Oceania)")
+
+	gOceania1960.2013.Country = ggplot() +
+	  geom_point(data=Oceania1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name)) +
+	  geom_point(data=Oceania2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name))
+
+	gOceania1960.2013.Year = ggplot() +
+	  geom_point(data=Oceania1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Year)) +
+	  geom_point(data=Oceania2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Year))
+
+##### THE AMERICAS GRAPHS
+
+	#The Americas Graphs.
+	gTheAmericas1960 = qplot(data=TheAmericas1960, x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name, size=I(1), main="Life Expectancy 1960 VS. Fertility Rate (In The Americas)")
+	gTheAmericas2013 = qplot(data=TheAmericas2013, x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name, size=I(1), main="Life Expectancy 2013 VS. Fertility Rate (In The Americas)")
+
+	gTheAmericas1960.2013.Country = ggplot() +
+	  geom_point(data=TheAmericas1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Country.Name)) +
+	  geom_point(data=TheAmericas2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Country.Name))
+
+	gTheAmericas1960.2013.Year = ggplot() +
+	  geom_point(data=TheAmericas1960, shape=3, aes(x=Fertility.Rate, y=Life.Expectancy.1960, color=Year)) +
+	  geom_point(data=TheAmericas2013, shape=20, aes(x=Fertility.Rate, y=Life.Expectancy.2013, color=Year))
 
 ### RESULTS
 
-...
+We obtained the next graphs as result:
+
+#### ALL DATA
+
+	#ALL GRAPHS-------------------------------------------------------------------
+	g1960
+
+![g1960.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/g1960.png)
+
+	g2013
+
+![g2013.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/g2013.png)
+
+	g1960.2013.Region
+
+![g1960.2013.Region.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/g1960.2013.Region.png)
+
+	g1960.2013.Year
+
+![g1960.2013.Year.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/g1960.2013.Year.png)
+
+`+ = 1960`	`. = 2013`
+
+#### AFRICA
+
+	gAfrica1960
+
+![gAfrica1960.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gAfrica1960.png)
+
+	gAfrica2013
+
+![gAfrica2013.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gAfrica2013.png)
+
+	gAfrica1960.2013.Country
+
+![gAfrica1960.2013.Country.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gAfrica1960.2013.Country.png)
+
+	gAfrica1960.2013.Year
+
+![gAfrica1960.2013.Year.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gAfrica1960.2013.Year.png)
+
+`+ = 1960`	`. = 2013`
+
+#### ASIA
+
+	gAsia1960
+
+![gAsia1960.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gAsia1960.png)
+
+	gAsia2013
+
+![gAsia2013.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gAsia2013.png)
+
+	gAsia1960.2013.Country
+
+![gAsia1960.2013.Country.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gAsia1960.2013.Country.png)
+
+	gAsia1960.2013.Year
+
+![gAsia1960.2013.Year.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gAsia1960.2013.Year.png)
+
+`+ = 1960`	`. = 2013`
+
+#### EUROPE
+
+	gEurope1960
+
+![gEurope1960.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gEurope1960.png)
+
+	gEurope2013
+
+![gEurope2013.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gEurope2013.png)
+
+	gEurope1960.2013.Country
+
+![gEurope1960.2013.Country.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gEurope1960.2013.Country.png)
+
+	gEurope1960.2013.Year
+
+![gEurope1960.2013.Year.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gEurope1960.2013.Year.png)
+
+`+ = 1960`	`. = 2013`
+
+#### MIDDLE EAST
+
+	gMiddleEast1960
+
+![gMiddleEast1960.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gMiddleEast1960.png)
+
+	gMiddleEast2013
+
+![gMiddleEast2013.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gMiddleEast2013.png)
+
+	gMiddleEast1960.2013.Country
+
+![gMiddleEast1960.2013.Country.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gMiddleEast1960.2013.Country.png)
+
+	gMiddleEast1960.2013.Year
+
+![gMiddleEast1960.2013.Year.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gMiddleEast1960.2013.Year.png)
+
+`+ = 1960`	`. = 2013`
+
+#### OCEANIA
+
+	gOceania1960
+
+![gOceania1960.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gOceania1960.png)
+
+	gOceania2013
+
+![gOceania2013.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gOceania2013.png)
+
+	gOceania1960.2013.Country
+
+![gOceania1960.2013.Country.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gOceania1960.2013.Country.png)
+
+	gOceania1960.2013.Year
+
+![gOceania1960.2013.Year.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gOceania1960.2013.Year.png)
+
+`+ = 1960`	`. = 2013`
+
+#### THE AMERICAS
+
+	gTheAmericas1960
+
+![gTheAmericas1960.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gTheAmericas1960.png)
+
+	gTheAmericas2013
+
+![gTheAmericas2013.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gTheAmericas2013.png)
+
+	gTheAmericas1960.2013.Country
+
+![gTheAmericas1960.2013.Country.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gTheAmericas1960.2013.Country.png)
+
+	gTheAmericas1960.2013.Year
+
+![gTheAmericas1960.2013.Year.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/gTheAmericas1960.2013.Year.png)
+
+`+ = 1960`	`. = 2013`
 
 ### FINAL EXPLANATION
 
 Summarizing the results We have to say that, first of all, the higher the fertility rate is, the shorter the life expectancy is.
 
 As We can see in the graphs, Europe has been the region with less fertility rate and more life expectancy through the years, and Africa the region with more fertility rate but a lower life expectancy.
+
+We can see too that the life expectancy is greater in 2013 than the life expectancy in 1960, and the fertility rate is lower in 2013 than the fertility rate in 1960.
+
+Asia is a region that improve a lot the life expectancy from 1960 to 2013 and The Americas reduced a lot the fertility rate from 1960 to 2013, meanwhile Africa suffer the lesser changes in comparation of all regions.
+
+![g1960.2013.Region.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/g1960.2013.Region.png)
+
+![g1960.2013.Year.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit1/evaluation/g1960.2013.Year.png)
+
+`+ = 1960`	`. = 2013`
