@@ -10,6 +10,9 @@
 
 #### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/homeworks)
 
+- [HOMEWORK 1: WHAT IS PAIR CODING? (MARTINEZ)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/homeworks/homework1_martinez.md)
+- [HOMEWORK 1: WHAT IS PAIR CODING? (SANDOVAL)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/homeworks/homework1_sandoval.md)
+
 #### [INVESTIGATIONS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/investigations)
 
 #### [EVALUATION](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/evaluation)
