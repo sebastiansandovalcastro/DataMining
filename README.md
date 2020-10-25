@@ -16,3 +16,6 @@
 #### [INVESTIGATIONS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/investigations)
 
 #### [EVALUATION](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/evaluation)
+
+- [EVALUATION UNIT 1 (DOCUMENTATION)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/evaluation/evaluationUnit1.md)
+- [EVALUATION UNIT 1 (R CODE)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/evaluation/evaluationUnit1.R)

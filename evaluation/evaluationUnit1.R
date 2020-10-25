@@ -13,7 +13,7 @@ dataCSV <- read.csv(file.choose())
 data1960CSV <- filter(dataCSV, Year == 1960)
 data1960CSV
 
-#Filter CSV in 1960 data.
+#Filter CSV in 2013 data.
 data2013CSV <- filter(dataCSV, Year== 2013)
 data2013CSV
 

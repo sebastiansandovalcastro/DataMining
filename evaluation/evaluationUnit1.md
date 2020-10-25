@@ -79,7 +79,7 @@ Once we stored the the CSV data, We filtered the data frame by year and divided 
 	data1960CSV <- filter(dataCSV, Year == 1960)
 	data1960CSV
 
-	#Filter CSV in 1960 data.
+	#Filter CSV in 2013 data.
 	data2013CSV <- filter(dataCSV, Year== 2013)
 	data2013CSV
 
