@@ -27,7 +27,7 @@ Where the design varies depending on the other functions used:
 - _fill_ --> This function fill the bars with a color to identify. 
 - _factor_ --> Factors are the data objects which are used to categorize the data and store it as levels.
  
-**Example:**    
+Example:    
 
     ggplot(data = mtcars) + geom_histogram(aes(x=qsec,fill=factor(am)),bins=10, position = "identity",alpha = 0.8, binwidth=0.8)
 
@@ -35,13 +35,13 @@ Where the design varies depending on the other functions used:
 of data interval or continuous time period. This chart is a variation of a Histogram that plots the 
 values distributions in order to soften the noise.
 
-**Example:**
+Example:
     
     ggplot(data = mtcars) + geom_density(aes(x=qsec,fill=factor(am)),bins=10, position = "identity",alpha = 0.5)
 
 **3) Function geompoint:** This function plots the values in the form of points in the plane.
 
-**Example:**
+Example:
     
     ggplot(mtcars, aes(mpg, qsec)) + geom_point(aes(size = cyl), alpha = 0.4)
 
