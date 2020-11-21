@@ -1,4 +1,4 @@
-# PRACTICE 2 - SIMPLE LINEAR REGRESSION
+# PRACTICE 1 - SIMPLE LINEAR REGRESSION
 
 ## Introduction
 In this practice, we run the code in the _simpleLinearRegression.R_ file and we made a bunch of observations.
