@@ -96,3 +96,75 @@ Then, we used the _geom_jitter()_ function to plot the data in a dot shape, were
 We used the _geom_boxplot()_ to make the box shaped data, with a 0.8 transparency in _alpha = 0.8_ and removing the garbage dots with _outlier.colour = NA_.
 
 We gave the title _Domestic Gross % by Genre_ to the graph with _ggtitle()_ function, and we used _xlab()_ and _ylab()_ function to rename the axes _x_ and _y_ as _Genre_ and _Gross % US_ respectively.
+
+	#Creamos inicialmente una gráfica que solo abarca los estudios necesarios, utilizando los ejes indicados.
+	#Añadimos la geometría jitter para visualizar los datos en forma de puntos y la geometría boxplot para representar cada género.
+	#En jitter, establecemos los tres tamaños de la columna "Budget...mill" para el tamaño de los puntos, divididos por estudio.
+	#En boxplot, establecemos la transparencia a 0.8 en alpha y nos deshacemos de los puntos negros sobrantes en las orillas.
+	#Agregamos los títulos correspondientes en la gráfica y a los ejes.
+	projectDataGraph <- ggplot(data = projectDataGenreStudio, aes(x = Genre, y = Gross...US)) + 
+	  geom_jitter(aes(size = Budget...mill., colour = Studio)) + 
+	  geom_boxplot(alpha = 0.8, outlier.colour = NA) + 
+	  ggtitle("Domestic Gross % by Genre") +
+	  xlab("Genre") + 
+	  ylab("Gross % US")
+	projectDataGraph
+
+![grafico1.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit2/evaluation/grafico1.png)
+
+We used the next code to rename the labels of the size and the colour as _Budget $M_ and _Studio_ respectively.
+
+	#Agregamos los títulos correspondientes en los divisores.
+	projectDataGraph$labels$size <- "Budget $M"
+	projectDataGraph$labels$colour <- "Studio"
+	projectDataGraph
+
+![grafico2.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit2/evaluation/grafico2.png)
+
+First of all, we imported the _extrafont_ library in order to use the necesarry fonts in the final plotting.
+
+	#Utilizamos la librería extrafont para el uso de fuentes.
+	library(extrafont)
+
+We used the _font_import()_ function to import all the fonts in the machine. This process was slow, around five minutes.
+
+	#Importamos las fuentes que tenemos en el equipo (5 min de carga).
+	font_import()
+
+Once we imported all the fonts in the PC, we load the fonts with _loadfonts()_ function. In this case, using _"win"_ to indicate that the current PC at the moment was a Windows device.
+
+	#Cargamos las fuentes del equipo.
+	loadfonts(device = "win")
+
+Finally we adapt the graph to the given example, using "Comic Sans MS" as the dominant font of the graph.
+
+The title size of the plot was 20, and centered with _hjust_ on a 0.5 value.
+
+We gave to the axes titles the purple colour just like the example, and sized the titles to 18.
+
+The elements on the _x_ axe were sized on 12 and the elements on the _y_ axe were sized on 08.
+
+We plotted the final graph at the end.
+
+	#Se adapta la gráfica al tema de ejemplo.
+	#Se le da una fuente "Comic Sans MS".
+	#Se le da al título del gráfico un tamaño de 20 y se ajusta al centro.
+	#A los títulos de los ejes se les asigna un color morado, con letra tamaño 18.
+	#A los elementos del eje x se les asigna una letra tamaño 12.
+	#A los elementos del eje y se les asigna una letra tamaño 08.
+	projectDataGraph <- projectDataGraph + 
+	  theme(
+		text = element_text(family = "Comic Sans MS"),
+		plot.title   = element_text(size = 20, hjust = 0.5),
+		axis.title.x = element_text(color = "purple", size = 18),
+		axis.title.y = element_text(color = "purple", size = 18),
+		axis.text.x  = element_text(size = 12),
+		axis.text.y  = element_text(size = 08)
+		)
+	projectDataGraph
+
+## RESULT
+
+We obtained the next graphs as final result:
+
+![graficoFinal.png](https://raw.github.com/sebastiansandovalcastro/DataMining/images/unit2/evaluation/graficoFinal.png)
