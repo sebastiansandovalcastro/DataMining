@@ -12,3 +12,4 @@ The original grammar of the graphic framework was proposed by Leland Wilkinson, 
 
 #### Componentes de la gramática de las gráficas 
 
+![](https://github.com/sebastiansandovalcastro/DataMining/tree/unit2/homeworks/MartinezFlores/Images/Triangle.png)
