@@ -8,10 +8,8 @@
 
 #### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/homeworks)
 
-- [HOMEWORK 1: WHAT IS THE GRAMMAR OF THE GRAPHICS? (MARTINEZ)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/homeworks/homework1_martinez.md)
+- [HOMEWORK 1: WHAT IS THE GRAMMAR OF THE GRAPHICS? (MARTINEZ)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/homeworks/homework1_martinezflores.md)
 - [HOMEWORK 1: WHAT IS THE GRAMMAR OF THE GRAPHICS? (SANDOVAL)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/homeworks/homework1_sandoval.md)
-- [HOMEWORK 2: WHAT IS MACHINE LEARNING? (MARTINEZ)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/homeworks/homework2_martinez.md)
-- [HOMEWORK 2: WHAT IS MACHINE LEARNING? (SANDOVAL)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/homeworks/homework2_sandoval.md)
 
 #### [INVESTIGATIONS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit2/investigations)
 
