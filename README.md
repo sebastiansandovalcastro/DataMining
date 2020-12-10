@@ -8,7 +8,7 @@
 - [PRACTICE 2: TWENTY "R" FUNCTIONS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/practices/practice2Unit1.md)
 - [PRACTICE 3: DATA SCIENTIST PROBLEM](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/practices/practice3Unit1.md)
 
-Unit1#### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/homeworks)
+#### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/homeworks)
 
 - [HOMEWORK 1: WHAT IS PAIR CODING? (MARTINEZ)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/homeworks/homework1Unit1_martinez.md)
 - [HOMEWORK 1: WHAT IS PAIR CODING? (SANDOVAL)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/homeworks/homework1Unit1_sandoval.md)
