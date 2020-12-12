@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UNIT 1
 
 ## INDEX
@@ -19,3 +20,6 @@
 
 - [EVALUATION UNIT 1 (DOCUMENTATION)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/evaluation/evaluationUnit1.md)
 - [EVALUATION UNIT 1 (R CODE)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/evaluation/evaluationUnit1.R)
+=======
+# UNIT 3
+>>>>>>> 42f5e07949142edadfe0550eca512126c8810496
