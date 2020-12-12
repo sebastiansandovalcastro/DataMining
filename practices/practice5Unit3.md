@@ -30,7 +30,7 @@ getwd()
 ![](https://github.com/sebastiansandovalcastro/DataMining/blob/images/unit3/practice5/image02.png)
 
 
-**4.** We import the dataset, only will take the Importamos el conjunto de datos, only the fourth and fifth columns.
+**4.** We import the dataset, only the fourth and fifth columns.
 
 ```r
 dataset = read.csv('Mall_Customers.csv')
