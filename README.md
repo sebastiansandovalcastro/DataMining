@@ -2,7 +2,7 @@
 
 ## INDEX
 
-#### [PRACTICES](https://github.com/sebastiansandovalcastro/DataMining/tree/unit1/practices)
+#### [PRACTICES](https://github.com/sebastiansandovalcastro/DataMining/tree/unit3/practices)
 
 - [PRACTICE 1: SIMPLE LINEAR REGRESSION](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/practices/practice1Unit3.md)
 - [PRACTICE 2: MULTIPLE LINEAR REGRESSION](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/practices/practice2Unit3.md)
@@ -13,7 +13,7 @@
 - [PRACTICE 7: CODE ANALYSIS OF RANDOM FOREST METHOD](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/practices/practice7Unit3.md)
 - [PRACTICE 8: CODE ANALYSIS OF SUPPORT VECTOR MACHINE METHOD](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/practices/practice8Unit3.md)
 
-#### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit1/homeworks)
+#### [HOMEWORKS](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/homeworks)
 
 - [HOMEWORK 1: WHAT IS MACHINE LEARNING? (MARTINEZ)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/homeworks/homework1Unit3_martinezflores.md)
 - [HOMEWORK 1: WHAT IS MACHINE LEARNING? (SANDOVAL)](https://github.com/sebastiansandovalcastro/DataMining/blob/unit3/homeworks/homework1Unit3_sandoval.md)
